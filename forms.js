@@ -4,21 +4,26 @@ var month = currentDate.getMonth();
 var year = currentDate.getFullYear();
 var monthDateYear  = (month+1) + "/" + date + "/" + year;
 
-document.getElementById('cdate').value = monthDateYear;
+document.getElementById('date').value = monthDateYear;
+
+
 
 var ID = function(){
-    return 'id_' + (new Date().getTime());
-};
+    return 'id_' + currentDate.getTime();
+}
 
-document.getElementById('order').value = ID();
+document.getElementById('orderNumber').value = ID();
+
 
 var q1, q2, q3, q4, q5, u1, u2, u3, u4, u5, t1, t2, t3, t4, t5, total;
 /*QUANTITY*/
+
 q1 = document.getElementById('quantity1').value;
 q2 = document.getElementById('quantity2').value;
 q3 = document.getElementById('quantity3').value;
 q4 = document.getElementById('quantity4').value;
 q5 = document.getElementById('quantity5').value;
+
 
 /*UNIT PRICE*/
 
@@ -42,9 +47,15 @@ document.getElementById('tprice3').value = t3;
 document.getElementById('tprice4').value = t4;
 document.getElementById('tprice5').value = t5;
 
+
+/*
+
 total = [t1, t2, t3, t4, t5];
 for(var i = 0; i <= total.length; i++){
     total += total[i];
+    return total;
 }
 
 document.getElementById('total').value = &#x20B1 + total;
+
+*/

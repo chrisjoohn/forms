@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" href="styles.css">
+		<title>
+			Customer Information
+		</title>
+	</head>
+
+	<body>
+		<h2 class="heading">
+			Order Form
+		</h2>
+		<div class="body-container">
+			<form id="myForm" class="form" action="action_page.php" method="get">
+				<div class="info">
+					<p>
+						Customer Information:
+					</p>
+					<div class="row">
+						<div class="col-6">
+							<label for="fname">Customer Name: </label><br/>
+							<input class="fname" id="fname" type="text" name="fname" value="" placeholder="First Name" maxlength="50" required>
+							<input class="lname"type="text" name="lname" value="" placeholder="Last Name" maxlength="50" required><br/>
+							<label for="address">Address: </label><br/>
+							<input class="address" type="text" name="address" value="" placeholder="Address" required><br/>
+							<label class="contact">Contact:</label><br/>
+							<input class="phone" type="number" name="phone" value="" placeholder="Phone" required>
+							<input class="mobile" type="number" name="mobile" value="" placeholder="Mobile" required><br/>
+							<input class="email" type="email" name="email" value="" placeholder="E-mail" maxlength="62" required>
+						</div>
+						<div class="col-3">
+							<input class="date" id="cdate" type="date" name="date" value="" placeholder="Order Date" readonly><br/>
+							<input class="orderNumber" id="order" type="number" name="orderNumber" value="" placeholder="Order Number" readonly>
+						</div>
+					</div>
+				</div>
+			<div class="product-container">
+				<h3>
+					Products to order:
+				</h3>
+				<div class="table-container">
+					<table id="productTable">
+					<thead>
+						<tr>
+							<th class="unit">
+								Unit
+							</th>
+							<th class="quantity">
+								Quantity
+							</th>
+							<th class="pcode">
+								Product Code
+							</th>
+							<th class="desc">
+								Description
+							</th>
+							<th class="uprice">
+								Unit Price
+							</th>
+							<th class="tprice">
+								Total Price
+							</th>
+						</tr>
+					</thead>
+					<!--ROW 1-->
+					<tr>
+						<td>
+							<input id="unit" type="text" name="unit" value="1">
+						</td>
+						<td dir="rtl">
+							<select name="quantity1" id="quantity1" class="quantity">
+								<option selected="selected" value="0">0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+							</select>
+						</td>
+						<td>
+							<input id="pcode" type="text" name="pcode" value="000001">
+						</td>
+						<td>
+							<input id="desc" type="text" name="desc" value="Product 1">
+						</td>
+						<td>
+							<input id="uprice1" type="number" name="uprice1" value="">
+						</td>
+						<td>
+							<input id="tprice1" type="number" name="tprice1"  value="" readonly> 
+						</td>
+					</tr>
+					<!--ROW 2-->
+					<tr>
+						<td>
+							<input id="unit" type="text" name="unit" value="2">
+						</td>
+						<td dir="rtl">
+							<select name="quantity2" id="quantity2" class="quantity">
+								<option selected="selected" value="0">0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+							</select>
+						</td>
+						<td>
+							<input id="pcode" type="text" name="pcode" value="000002">
+						</td>
+						<td>
+							<input id="desc" type="text" name="desc" value="Product 2">
+						</td>
+						<td>
+							<input id="uprice2" type="number" name="uprice2" value="">
+						</td>
+						<td>
+							<input id="tprice2" type="number" name="tprice2" value="" readonly>
+						</td>
+					</tr>
+					<!--ROW 3-->
+					<tr>
+						<td>
+							<input id="unit" type="text" name="unit" value="3">
+						</td>
+						<td dir="rtl">
+							<select name="quantity3" id="quantity3" class="quantity">
+								<option selected="selected" value="0">0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+							</select>
+						</td>
+						<td>
+							<input id="pcode" type="text" name="pcode" value="000003">
+						</td>
+						<td>
+							<input id="desc" type="text" name="desc" value="Product 3">
+						</td>
+						<td>
+							<input id="uprice3" type="number" name="uprice3" value="">
+						</td>
+						<td>
+							<input id="tprice3" type="number" name="tprice3" value="" readonly>
+						</td>
+					</tr>
+					<!--ROW 4-->
+					<tr>
+						<td>
+							<input id="unit" type="text" name="unit" value="4">
+						</td>
+						<td dir="rtl">
+							<select name="quantity4" id="quantity4" class="quantity">
+								<option selected="selected" value="0">0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+							</select>
+						</td>
+						<td>
+							<input id="pcode" type="text" name="pcode" value="000004">
+						</td>
+						<td>
+							<input id="desc" type="text" name="desc" value="Product 4">
+						</td>
+						<td>
+							<input id="uprice4" type="number" name="uprice4" value="">
+						</td>
+						<td>
+							<input id="tprice4" type="number" name="tprice4" value="" readonly>
+						</td>
+					</tr>
+					<!--ROW 5-->
+					<tr>
+						<td>
+							<input id="unit" type="text" name="unit" value="5">
+						</td>
+						<td dir="rtl">
+							<select name="quantity5" id="quantity5" class="quantity">
+								<option selected="selected" value="0">0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+							</select>
+						</td>
+						<td>
+							<input id="pcode" type="text" name="pcode" value="000005">
+						</td>
+						<td>
+							<input id="desc" type="text" name="desc" value="Product 5">
+						</td>
+						<td>
+							<input id="uprice5" type="number" name="uprice5" value="">
+						</td>
+						<td>
+							<input id="tprice5" type="number" name="tprice5" value="" readonly>
+						</td>
+					</tr>
+					</table>
+				</div>
+				<div class="total-container">
+					<label for="total" id="total">Total </label>
+					<input id="total" type="number" name="total" value="" readonly>
+				</div>
+					<input id="submit" type="submit" value="Submit">
+					<input id="reset" type="reset" value="Reset">	
+			</div>
+			</form>
+		</div>
+		<script src="forms.js"></script>
+	</body>
+</html>

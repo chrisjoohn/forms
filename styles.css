@@ -1,0 +1,187 @@
+.heading{
+    text-decoration: underline;
+    text-align: center;
+    font-size: 35px;
+}
+
+.info{
+    border: 1px solid black;
+}
+
+.row{
+    display: flex;
+}
+
+.col-6{
+    flex: 63%;
+}
+
+input{
+    margin: 10px;
+}
+
+p{
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+label{
+    margin-left: 10px;
+    font-weight: bold;
+
+}
+
+.phone, .mobile{
+    margin-bottom: 3px;
+}
+
+.date{
+    margin-bottom: 3px;
+    width: 73px;
+}
+
+.orderNumber{
+    margin-bottom: 3px;
+    width: 90px;
+    float: right;
+}
+
+.address{
+    width: 500px; 
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th{
+    border: 1px solid;
+}
+
+.unit{
+    width: 70px;    
+}
+
+.quantity{
+    width: 60px;
+}
+
+.pcode{
+    width: 250px;
+    text-align: center;
+}
+
+.tprice, .uprice{
+    width: 150px;
+}
+
+
+select{
+    width: 100px;
+    border: 0px;
+}
+
+#desc{
+    display: table-cell;
+    width: 100%;
+    box-sizing: content-box;    
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+#tprice1, #tprice2,#tprice3,#tprice4,#tprice5{
+    display: table-cell;
+    width: 100%;
+    box-sizing: content-box;    
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    direction: rtl;
+}
+
+#uprice1, #uprice2, #uprice3, #uprice4, #uprice5{
+    display: table-cell;
+    width: 100%;
+    box-sizing: content-box;    
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    direction: rtl;
+}
+
+#unit{
+    display: table-cell;
+    width: 100%;
+    box-sizing: content-box;    
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    text-align: center;
+}
+
+#pcode{
+    text-align: center;
+    display: table-cell;
+    width: 100%;
+    box-sizing: content-box;    
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.product-container{
+    display: table;
+    width: 100%;
+}
+
+h3{
+    text-decoration: underline;
+}
+
+#submit, #reset{
+    margin-left: 0px;
+    width: 100px;
+    margin-top: 10px;
+}
+
+.total-container{
+    float: right;
+}
+
+/*mobile view*/
+
+@media only screen and (max-width: 600px){
+    #reset{
+        margin-top: 0%;
+    }
+
+    .address{
+        width: 320px;
+    }
+
+    #quantity1, #quantity2, #quantity3, #quantity4, #quantity5{
+        width: 70px;
+    }
+
+    .date{
+        width: 70px;
+        float: right;
+    }
+
+    .orderNumber{
+        width: 87px;
+        float: right;
+        margin-top: 0%;
+    }
+
+    .lname, .phone, .mobile, .email{
+        margin-top: 0px;
+    }
+
+    #total{
+        width: 100px;
+    }
+}

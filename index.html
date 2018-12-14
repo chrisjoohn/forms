@@ -23,7 +23,7 @@
 						<div class="col-6">
 							<label for="fname">Customer Name: </label><br/>
 							<input class="fname" id="fname" type="text" name="fname" value="" placeholder="First Name" maxlength="50" required>
-							<input class="lname"type="text" name="lname" value="" placeholder="Last Name" maxlength="50" required><br/>
+						    <input class="lname" type="text" name="lname" value="" placeholder="Last Name" maxlength="50" required><br/>
 							<label for="address">Address: </label><br/>
 							<input class="address" type="text" name="address" value="" placeholder="Address" required><br/>
 							<label class="contact">Contact:</label><br/>
@@ -71,7 +71,7 @@
 							<input id="unit" type="text" name="unit" value="1">
 						</td>
 						<td dir="rtl">
-							<select name="quantity1" id="quantity1" class="quantity">
+							<select name="quantity1" id="quantity1" class="quantity" onchange="changeValue1(this.value)">
 								<option selected="selected" value="0">0</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
@@ -89,13 +89,13 @@
 							<input id="pcode" type="text" name="pcode" value="000001">
 						</td>
 						<td>
-							<input id="desc" type="text" name="desc" value="Product 1">
+							<input id="desc" type="text" name="desc1" value="Product 1">
 						</td>
 						<td>
-							<input id="uprice1" type="number" name="uprice1" value="">
+							<input id="uprice1" type="number" name="uprice1" value="10" readonly>
 						</td>
 						<td>
-							<input id="tprice1" type="number" name="tprice1"  value="" readonly> 
+							<input id="tprice1" type="number" name="tprice1"  value="0" readonly> 
 						</td>
 					</tr>
 					<!--ROW 2-->
@@ -104,7 +104,7 @@
 							<input id="unit" type="text" name="unit" value="2">
 						</td>
 						<td dir="rtl">
-							<select name="quantity2" id="quantity2" class="quantity">
+							<select name="quantity2" id="quantity2" class="quantity" onchange="changeValue2(this.value)">
 								<option selected="selected" value="0">0</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
@@ -122,13 +122,13 @@
 							<input id="pcode" type="text" name="pcode" value="000002">
 						</td>
 						<td>
-							<input id="desc" type="text" name="desc" value="Product 2">
+							<input id="desc" type="text" name="desc2" value="Product 2">
 						</td>
 						<td>
-							<input id="uprice2" type="number" name="uprice2" value="">
+							<input id="uprice2" type="number" name="uprice2" value="15"readonly>
 						</td>
 						<td>
-							<input id="tprice2" type="number" name="tprice2" value="" readonly>
+							<input id="tprice2" type="number" name="tprice2" value="0" readonly>
 						</td>
 					</tr>
 					<!--ROW 3-->
@@ -137,7 +137,7 @@
 							<input id="unit" type="text" name="unit" value="3">
 						</td>
 						<td dir="rtl">
-							<select name="quantity3" id="quantity3" class="quantity">
+							<select name="quantity3" id="quantity3" class="quantity" onchange="changeValue3(this.value)">
 								<option selected="selected" value="0">0</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
@@ -155,13 +155,13 @@
 							<input id="pcode" type="text" name="pcode" value="000003">
 						</td>
 						<td>
-							<input id="desc" type="text" name="desc" value="Product 3">
+							<input id="desc" type="text" name="desc3" value="Product 3">
 						</td>
 						<td>
-							<input id="uprice3" type="number" name="uprice3" value="">
+							<input id="uprice3" type="number" name="uprice3" value="20" readonly>
 						</td>
 						<td>
-							<input id="tprice3" type="number" name="tprice3" value="" readonly>
+							<input id="tprice3" type="number" name="tprice3" value="0" readonly>
 						</td>
 					</tr>
 					<!--ROW 4-->
@@ -170,7 +170,7 @@
 							<input id="unit" type="text" name="unit" value="4">
 						</td>
 						<td dir="rtl">
-							<select name="quantity4" id="quantity4" class="quantity">
+							<select name="quantity4" id="quantity4" class="quantity" onchange="changeValue4(this.value)">
 								<option selected="selected" value="0">0</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
@@ -188,13 +188,13 @@
 							<input id="pcode" type="text" name="pcode" value="000004">
 						</td>
 						<td>
-							<input id="desc" type="text" name="desc" value="Product 4">
+							<input id="desc" type="text" name="desc4" value="Product 4">
 						</td>
 						<td>
-							<input id="uprice4" type="number" name="uprice4" value="">
+							<input id="uprice4" type="number" name="uprice4" value="25" readonly>
 						</td>
 						<td>
-							<input id="tprice4" type="number" name="tprice4" value="" readonly>
+							<input id="tprice4" type="number" name="tprice4" value="0" readonly>
 						</td>
 					</tr>
 					<!--ROW 5-->
@@ -203,7 +203,7 @@
 							<input id="unit" type="text" name="unit" value="5">
 						</td>
 						<td dir="rtl">
-							<select name="quantity5" id="quantity5" class="quantity">
+							<select name="quantity5" id="quantity5" class="quantity" onchange="changeValue5(this.value)">
 								<option selected="selected" value="0">0</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
@@ -221,20 +221,20 @@
 							<input id="pcode" type="text" name="pcode" value="000005">
 						</td>
 						<td>
-							<input id="desc" type="text" name="desc" value="Product 5">
+							<input id="desc" type="text" name="desc5" value="Product 5">
 						</td>
 						<td>
-							<input id="uprice5" type="number" name="uprice5" value="">
+							<input id="uprice5" type="number" name="uprice5" value="30" readonly>
 						</td>
 						<td>
-							<input id="tprice5" type="number" name="tprice5" value="" readonly>
+							<input id="tprice5" type="number" name="tprice5" value="0" readonly>
 						</td>
 					</tr>
 					</table>
 				</div>
 				<div class="total-container">
-					<label for="total" id="total">Total </label>
-					<input id="total" type="number" name="total" value="" readonly>
+					<label for="total">Total </label>
+					<input id="total" type="text" name="total" value="0" readonly>
 				</div>
 					<input id="submit" type="submit" value="Submit">
 					<input id="reset" type="reset" value="Reset">	

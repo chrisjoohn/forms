@@ -42,8 +42,9 @@ label{
 }
 
 .orderNumber{
+    margin-top: 0%;
     margin-bottom: 3px;
-    width: 90px;
+    width: 119px;
     float: right;
 }
 
@@ -149,6 +150,10 @@ h3{
 
 .total-container{
     float: right;
+}
+
+#total{
+    direction: rtl;
 }
 
 /*mobile view*/

@@ -43,7 +43,7 @@
                         <td><?php $_GET['desc1'];?></td>
                         <td><?php $_GET['quantity1'];?></td>
                         <td><?php $_GET['uprice1'];?></td>
-                        <td><?php $_GET['trpice1'];?></td>
+                        <td><?php $_GET['tprice1'];?></td>
                     </tr>
                 </table>
             </div>
